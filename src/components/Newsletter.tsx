@@ -17,8 +17,8 @@ const Newsletter = () => {
     // Simulate API call
     setTimeout(() => {
       toast({
-        title: "Thank you for subscribing!",
-        description: "You'll receive updates about Atlas soon."
+        title: "Thank you for joining!",
+        description: "You'll receive updates about Baseera's latest narratives."
       });
       setEmail("");
       setIsSubmitting(false);
@@ -30,13 +30,13 @@ const Newsletter = () => {
           <div className="flex items-center gap-4 mb-6">
             <div className="pulse-chip">
               <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">05</span>
-              <span>Newsletter</span>
+              <span>Connect</span>
             </div>
           </div>
           
-          <h2 className="text-5xl font-display font-bold mb-4 text-left">Subscribe to the newsletter</h2>
+          <h2 className="text-5xl font-display font-bold mb-4 text-left">Join the narrative</h2>
           <p className="text-xl text-gray-700 mb-10 text-left">
-            Be first to hear about breakthroughs, partnerships, and deployment opportunities
+            Be first to hear about cultural moments, breakthrough campaigns, and exclusive opportunities
           </p>
           
           <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-4 items-start md:items-center">

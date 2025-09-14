@@ -10,27 +10,27 @@ interface TestimonialProps {
 }
 
 const testimonials: TestimonialProps[] = [{
-  content: "Atlas transformed our production line, handling repetitive tasks while our team focuses on innovation. 30% increase in output within three months.",
+  content: "Baseera transformed our brand story into a cinematic experience. Their human-centric approach doubled our engagement and built genuine emotional connection with our audience.",
   author: "Sarah Chen",
-  role: "VP of Operations, Axion Manufacturing",
+  role: "Chief Marketing Officer, Elevate Brands",
   gradient: "from-blue-700 via-indigo-800 to-purple-900",
   backgroundImage: "/background-section1.png"
 }, {
-  content: "Implementing Atlas in our fulfillment centers reduced workplace injuries by 40% while improving order accuracy. The learning capabilities are remarkable.",
+  content: "Working with Baseera feels like partnering with cultural architects. They don't just create content—they craft narratives that leave lasting impact on our industry.",
   author: "Michael Rodriguez",
-  role: "Director of Logistics, GlobalShip",
+  role: "Founder, Narrative Studios",
   gradient: "from-indigo-900 via-purple-800 to-orange-500",
   backgroundImage: "/background-section2.png"
 }, {
-  content: "Atlas adapted to our lab protocols faster than any system we've used. It's like having another researcher who never gets tired and maintains perfect precision.",
+  content: "The boutique approach makes all the difference. Every project receives award-winning attention. Baseera doesn't just execute—they elevate your brand to cultural relevance.",
   author: "Dr. Amara Patel",
-  role: "Lead Scientist, BioAdvance Research",
+  role: "Creative Director, Impact Media",
   gradient: "from-purple-800 via-pink-700 to-red-500",
   backgroundImage: "/background-section3.png"
 }, {
-  content: "As a mid-size business, we never thought advanced robotics would be accessible to us. Atlas changed that equation entirely with its versatility and ease of deployment.",
+  content: "15+ years of experience shows in every frame. Baseera bridges the gap between strategy and execution like no other agency. They understand that brands are built on stories.",
   author: "Jason Lee",
-  role: "CEO, Innovative Solutions Inc.",
+  role: "CEO, Heritage Brands Inc.",
   gradient: "from-orange-600 via-red-500 to-purple-600",
   backgroundImage: "/background-section1.png"
 }];
@@ -64,11 +64,11 @@ const Testimonials = () => {
         <div className="flex items-center gap-4 mb-6">
           <div className="pulse-chip">
             <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">04</span>
-            <span>Testimonials</span>
+            <span>Stories Told</span>
           </div>
         </div>
         
-        <h2 className="text-5xl font-display font-bold mb-12 text-left">What others say</h2>
+        <h2 className="text-5xl font-display font-bold mb-12 text-left">Brands we've trusted</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => <TestimonialCard key={index} content={testimonial.content} author={testimonial.author} role={testimonial.role} gradient={testimonial.gradient} backgroundImage={testimonial.backgroundImage} />)}
